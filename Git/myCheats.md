@@ -65,3 +65,32 @@ REMOTE repository (GitHub)
 git push 
 git pull
 
+# switch to master branch
+git checkout master
+
+# switch to other branch
+git checkout branch_name
+
+#  merge branch to master/main
+git checkout master
+git checkout main 
+
+# merge conflict I
+can switch branches with "checkout"
+make edits, add and commit to any branch independantly
+
+# merge conflict II
+$ git checkout master
+$ git merge fencing
+   we will get a conflict!
+use code editor (nano)
+resolve conflict
+add file(s)
+commit again
+
+# delete branch (after merge)
+git branch -d branch_name
+
+# delete branch that was never merged
+git branch -D branch_name
+

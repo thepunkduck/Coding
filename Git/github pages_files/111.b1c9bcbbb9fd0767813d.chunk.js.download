@@ -1,0 +1,2 @@
+(window.__LOADABLE_LOADED_CHUNKS__=window.__LOADABLE_LOADED_CHUNKS__||[]).push([[111],{BTbO:function(t,e,n){"use strict";n.d(e,"a",(function(){return useAssessmentAttempts}));var u=n("ODXe"),s=n("q1tI");function useAssessmentAttempts(t){var e=Object(s.useState)(0),n=Object(u.a)(e,2),c=n[0],r=n[1],_=Object(s.useCallback)((function(){return r((function(t){return t+1}))}),[r]),O=Object(s.useCallback)((function(){r(0)}),[r]),i=Object(s.useMemo)((function(){return!!(t&&c>=t)}),[c,t]);return[c,i,_,O]}}}]);
+//# sourceMappingURL=111.b1c9bcbbb9fd0767813d.chunk.js.map

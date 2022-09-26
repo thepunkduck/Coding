@@ -1,4 +1,4 @@
-# git documentation
+git documentation
 ==================
 
 https://git-scm.com/docs

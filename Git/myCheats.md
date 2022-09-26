@@ -18,10 +18,14 @@ git branch -M main
 # shows current branch
 git branch
 
-git remote add origin [url]
-eg:
+git remote add origin _url_
+ eg
+ 
+ 
 git remote add origin https://github.com/thepunkduck/excursion.git
+
 git branch -M main
+
 git push -u origin main
 
 git pull 
@@ -66,7 +70,7 @@ LOCAl repository
 REMOTE repository (GitHub)
 
 
-git push 
+git push  
 git pull
 
 # switch to master branch
@@ -84,13 +88,13 @@ can switch branches with "checkout"
 make edits, add and commit to any branch independantly
 
 # merge conflict II
-$ git checkout master
-$ git merge fencing
-   we will get a conflict!
-use code editor (nano)
+git checkout master
+git merge fencing
+   *we will get a conflict!*
+_use code editor (nano)
 resolve conflict
 add file(s)
-commit again
+commit again_
 
 # delete branch (after merge)
 git branch -d branch_name

@@ -18,16 +18,11 @@ git branch -M main
 # shows current branch
 git branch
 
-git remote add origin _url_
- eg
- 
- 
-git remote add origin https://github.com/thepunkduck/excursion.git
-
-git branch -M main
-
-git push -u origin main
-
+git remote add origin _url_  
+eg:  
+git remote add origin https://github.com/thepunkduck/excursion.git  
+git branch -M main  
+git push -u origin main  
 git pull 
 
 

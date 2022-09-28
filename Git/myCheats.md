@@ -350,8 +350,8 @@ That's it—that's all it does—but it has all those implications noted above. 
 
 3If you run your first git push as git push -u origin solaris—i.e., if you add the -u flag—Git will set origin/solaris as the upstream for your current branch if (and only if) the push succeeds. So you should supply -u on the first push. In fact, you can supply it on any later push, and it will set or change the upstream at that point. But I think git branch --set-upstream-to is easier, if you forgot.
 
-_There was a young lass of Aberdeen,
-The changes from Git were her dream,
-Scratched her head, wracked her brain,
-Almost drove her insane,
+_There was a young lass of Aberdeen,\
+The changes from Git were her dream,\
+Scratched her head, wracked her brain,\
+Almost drove her insane,\
 She'd forgotten to set her upstream_

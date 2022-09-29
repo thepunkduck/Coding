@@ -27,8 +27,7 @@ git branch
 
 git remote add origin _url_  
 eg:  
-git remote add origin https://github.com/thepunkduck/excursion.git  
-git branch -M main  
+git remote add origin https://github.com/thepunkduck/excursion.git   
 git push -u origin main  
 git pull 
 
@@ -142,6 +141,53 @@ git checkout -b branchName
 
 > git log --graph --decorate --oneline --all
 
+
+# create repo from commandline
+$ git init -b main
+$ git add . && git commit -m "initial commit" (adds all files and does initial commit)
+
+$ gh repo create
+? What would you like to do? Push an existing local repository to GitHub
+? Path to local repository (.) 
+? Path to local repository .
+? Repository name created-from-cli   
+? Description created-from-cli   gh repo clone thepunkduck/Nanasrepo
+? Visibility Public
+✓ Created repository thepunkduck/created-from-cli on GitHub
+? Add a remote? Yes   
+? What should the new remote be called? (origin) 
+? What should the new remote be called? origin
+? Would you like to push commits from the current branch to "origin"? Yes
+✓ Pushed commits to https://github.com/thepunkduck/created-from-cli.gitY/n) y
+
+done!
+
+
+
+# do a fork
+create a new for in github
+### code->Github CLI (or whatever)
+gh repo clone thepunkduck/Nanasrepo
+cd Nanasrepo
+### make changes...
+git add .
+git commit -m "quiz answers"
+$ git push
+## in GitHUb --- Contribute-> open pull request etc
+
+### do a fork if code is not yours
+### clone if yours, or you just want to copy and not pull request
+
+## starts coding from command line
+code . 
+
+#Atlassian
+
+
+## Github Pages::
+in repo settings->Pages
+select a branch, Save
+custom domain?
 
 Creating a .gitignore File
 .gitignore is usually placed in the root directory of the repository. The filenames inside a .gitignore file can be written relative to the location of the .gitignore file. For example, we could add the line

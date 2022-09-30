@@ -1,7 +1,15 @@
-git documentation
-==================
+# Git and Github related notes
 
+## Documentation:
 https://git-scm.com/docs
+
+# Getting started locally
+git init  
+git add README.md  
+_add files, create stuff, anything..._  
+git add <filename>  
+git add .   (all files that have changed)  
+git commit -m "nice comment"
 
 # shows the list of commits in one line format.
 git log --oneline 
@@ -51,8 +59,6 @@ git reset commit_SHA
 git commit --amend --no-edit
 
 
-git add filename
-git add .  // all files
 
 "SHA" stands for Simple Hashing Algorithm
 shown for each commit!

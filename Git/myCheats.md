@@ -3,13 +3,56 @@
 ## Documentation:
 https://git-scm.com/docs
 
-# Getting started locally
+# Getting started local repo
 git init  
 git add README.md  
 _add files, create stuff, anything..._  
-git add <filename>  
+git add \<filename>  
 git add .   (all files that have changed)  
 git commit -m "nice comment"
+
+
+## Adding new repository on Github  
+on github:  
+repositories-> new, then fill in, choose public/private, add README (recommended)  
+create repository  
+instructions are shown to either create a new local repo or push an existing one.
+
+### create a new repository on the command line
+echo "# junk" >> README.md  
+git init  
+git add README.md  
+git commit -m "first commit"  
+git branch -M main  
+git remote add origin https://github.com/thepunkduck/junk.git  
+git push -u origin main  
+
+### push an existing repository from the command line
+git remote add origin https://github.com/thepunkduck/junk.git  
+git branch -M main  
+git push -u origin main  
+
+
+## general commands  
+git init       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; _local git intialization_  
+git status     &nbsp;&nbsp;&nbsp;&nbsp; _shows current staging vs upstream and staging awaiting commit_  
+git add .      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; _add all files to staging_   
+git commit -m "message for commit"  
+git push  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; _push to remote (github)_  
+git pull  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; _pull (to local) from remote_  
+git fetch  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; _fetch (to staging) from remote_  
+git branch  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; _show the branches that exist_  
+git branch -a &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; _show all branches that exist, including remote_  
+git branch \<branch-name>  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; _create a branch with this name_  
+git checkout \<branch-name>  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; _switch to this branch_  
+git checkout -b \<branch-name> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; _create, then switch to this branch in one step_  
+git merge \<branch-name>   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  
+git branch -d \<branch-name>  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; _delete branch (after merge)_  
+git branch -D \<branch-name>  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; _delete branch that was never merged_  
+
+
+
+git log  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; _git history_  
 
 # shows the list of commits in one line format.
 git log --oneline 
@@ -23,8 +66,6 @@ git log --oneline --graph
 git branch <branch-name>
 # switch to branch
 git checkout <branch-name>
-# create and switch to branch
-git checkout -b <branch-name>
 
 
 # rename branch
@@ -103,11 +144,7 @@ resolve conflict
 add file(s)
 commit again_
 
-# delete branch (after merge)
-git branch -d branch_name
 
-# delete branch that was never merged
-git branch -D branch_name
 
 # clone repository
 git clone <url>
@@ -408,5 +445,4 @@ Scratched her head, wracked her brain,\
 Almost drove her insane,\
 She'd forgotten to set her upstream_
 
-hey hey
 
